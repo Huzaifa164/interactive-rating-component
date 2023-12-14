@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap')
+@font-face 
+    font-family Overpass
+    src url('https://fonts.googleapis.com/css2?family=Overpass&display=swap')
+    font-weight 400
+@font-face 
+    font-family Overpass
+    src url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap')
+    font-weight 700
+* 
+  margin 0
+  padding 0
+  box-sizing border-box
+body 
+    display flex
+    justify-content center
+    height 100vh
+    align-items center
+    background-color hsl(216, 12%, 8%)
+    color hsl(0, 0%, 100%)
+    font-family Overpass
+.rating
+    &__card
+        background-color hsl(213, 19%, 18%)
+        width 25rem
+        padding 2rem
+        border-radius 1rem
+        .star__img
+            img 
+                background-color hsl(213, 19%, 22%)
+                padding 0.5rem
+                border-radius 100%
+    &__heading
+        margin-top 1.2rem
+    &__text
+        margin-top 1rem
+        color hsl(217, 12%, 63%)
+    &__nums
+        display flex
+        justify-content space-between
+        margin 1rem 0
+        p 
+            width 3rem
+            height 3rem
+            background-color hsl(213, 19%, 22%)
+            border-radius 100%
+            display flex
+            justify-content center
+            align-items center
+            cursor pointer
+            &:hover
+                background-color hsl(216, 12%, 54%)
+            &:active
+                background-color rgb(252, 118, 20)
+.submit
+    &__btn
+       button 
+        width 100%
+        padding 0.5rem 0
+        border-radius 1rem
+        cursor pointer
+        background-color rgb(252, 118, 20)
+        color hsl(0, 0%, 100%)
+        transition 0.3s ease
+        border none
+        &:hover
+           color rgb(252, 118, 20)
+           background-color hsl(0, 0%, 100%) 
+.thank
+    &-state
+        // display flex
+        display none
+        flex-direction column
+        align-items center
+        text-align center
+        gap 1.5rem
+        .result
+            background-color hsl(213, 19%, 22%)
+            padding 0.3rem 0.7rem
+            border-radius 1rem
+            color rgb(252, 118, 20)
+    &__text
+        margin-top 1rem
+        color #959eac;
+@media (max-width 430px)
+    .rating
+        &__card
+            width 22rem 
